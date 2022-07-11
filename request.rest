@@ -1,0 +1,38 @@
+GET http://localhost:3003/api/cars
+Content-Type: application/json
+
+###
+
+POST http://localhost:3003/api/cars
+Content-Type: application/json
+
+{
+    "name": "Nivus",
+    "brand": "VolksWagen",
+    "color": "Preto",
+    "year": 2021,
+    "min_price":150000,
+    "max_price": 180000,
+    "license_plate": "abc1234",
+    "description": "Único dono, ótimo estado" 
+}
+###
+
+GET http://localhost:3003/api/cars/{id}
+id: 72092f9f-4261-461b-816e-29a21ae52d3c
+Content-Type: application/json
+
+###
+
+PUT http://localhost:3003/api/cars/{id}
+id: '3893b3a7-6161-47b1-ac42-9ea18d85c31f'
+Content-Type: application/json
+
+
+{
+    "brand": "VolksWagen",
+    "color": "Preto",
+    "year": 2015,
+    "min_price":70000,
+    "max_price": 120000
+}
